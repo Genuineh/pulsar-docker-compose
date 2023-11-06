@@ -1,2 +1,3 @@
-# pulsar-docker-compose
-pulsar-docker-compose
+# README
+
+run run.sh to start pulsar cluster
