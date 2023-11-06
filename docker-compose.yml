@@ -12,7 +12,7 @@ services:
       - pulsar
     volumes:
       - ./data/zookeeper:/pulsar/data/zookeeper
-      # - ./data/zookeeper/version-2:/pulsar/data/zookeeper/version-2
+      - ./data/zookeeper/version-2:/pulsar/data/zookeeper/version-2
     environment:
       - metadataStoreUrl=zk:zookeeper:2181
       - PULSAR_MEM=-Xms256m -Xmx256m -XX:MaxDirectMemorySize=256m
